@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
       <!-- Bootstrap CDN -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
@@ -13,20 +13,30 @@
 
     <!-- Start Nav -->
     <!-- Base code copied from w3schools-->
-    <nav class="navbar navbar-dark" style="background-color: #4aaaa5">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                    <h1 class="text-white bg-dark">Melissa Knapp</h1>
-              </div>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li class="active"><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </nav>
+    <nav class="navbar navbar-dark" style="background-color: white">
+      <div class="container-fluid">
+        <div class="navbar-header bg-info">
+          <h1 class="text-white bg-info">Melissa Knapp</h1>
+        </div>
+        <!-- <ul class="nav navbar-nav justify-content-end">
+          <li class="active"><a href="#">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul> -->
 
-        </header>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
         <div class="container">
                 <div class="row">
@@ -58,7 +68,11 @@
                 
                 </div>
 
-
+                <footer class="fixed-bottom bg-info">
+                    <div id="footer" class="container-fluid">
+                        copyright©
+                    </div>
+                 </footer>
 
     </body>
     </html>

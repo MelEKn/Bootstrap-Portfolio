@@ -1,92 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-      <!-- Bootstrap CDN -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
 
     <!-- Start Nav -->
     <!-- Base code copied from w3schools-->
-    <nav class="navbar navbar-dark" style="background-color: #4aaaa5">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                    <h1 class="text-white bg-dark">Melissa Knapp</h1>
-              </div>
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.html">About</a></li>
-                <li class="active"><a href="#">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+    <nav class="navbar navbar-dark" style="background-color: white">
+        <div class="container-fluid">
+            <div class="navbar-header bg-info">
+                <h1 class="text-white bg-info">Melissa Knapp</h1>
             </div>
-          </nav>
+            <!-- <ul class="nav navbar-nav justify-content-end">
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul> -->
 
-        </header>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        <div class="container">
+    <div class="container">
 
-                <div class="row">
-                        <div class="col-md-1"></div>
-                    <div class="col-md-8">
-                        <div class="page-header">
-                             <h3 id="headline">Portfolio</h3>
-                        </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                            <div class="col-md-1"></div>
-                        <div class="col-md-3">
-                            <!-- Image 1 -->
-                            <img src="assets/images/image1.jpg" id="image1" alt="" style="width: 250px"/>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-3">
-                                <!-- Image 2 -->
-                                <img src="assets/images/image2.jpg" id="image2" alt="" style="width: 250px"/>
-                            </div>
-                        </div>
-
-                    <!-- Gap between rows-->
-                        <div class="row"><br /> </br /> <br /> </br /> </div>
-
-                        <div class="row">
-                                <div class="col-md-1"></div>
-                            <div class="col-md-3">
-                                <!-- Image 3 -->
-                                <img src="assets/images/image3.jpg" id="image3" alt="" style="width: 250px"/>
-                            </div>
-                            <div class="col-md-1"></div>
-                            <div class="col-md-3">
-                                    <!-- Image 4 -->
-                                    <img src="assets/images/image4.jpg" id="image4" alt="" style="width: 250px"/>
-                                </div>
-                            </div>
-
-                        <!-- Gap between rows-->
-                        <div class="row"><br /> </br /> <br /> </br /> </div>
-
-                        <div class="row">
-                                <div class="col-md-1"></div>
-                            <div class="col-md-3">
-                                <!-- Image 5 -->
-                                <img src="assets/images/image5.jpg" id="image5" alt="" style="width: 250px"/>
-                            </div>
-                            </div>
-
-
-                       
-    
-    
-    
-    
-                
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <div class="page-header">
+                    <h3 id="headline">Portfolio</h3>
                 </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 card">
+                <img class="card-img-top" src="assets/images/image1.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Example</h5>
+                </div>
+                <!-- Image 1 -->
+                <!-- <img src="assets/images/image1.jpg" id="image1" alt="" style="width: 250px"/>
+                            <div class="carousel-caption">
+                                <h4>Example headline.</h4>
+                              </div> -->
+            </div>
+            <div class="col-1"></div>
+            <div class="col-4 card">
+                <!-- Image 2 -->
+                <img class="card-img-top" src="assets/images/image2.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Example 2</h5>
+                </div>
+                <!-- <img src="assets/images/image2.jpg" id="image2" alt="" style="width: 250px"/> -->
+            </div>
+        </div>
+
+        <!-- Gap between rows-->
+        
+        <div class="row"><br /> </br />  </div>
+
+        <div class="row">
+                <div class="col-4 card">
+                    <img class="card-img-top" src="assets/images/image3.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Example 3</h5>
+                    </div>
+                    <!-- Image 1 -->
+                    <!-- <img src="assets/images/image1.jpg" id="image1" alt="" style="width: 250px"/>
+                                <div class="carousel-caption">
+                                    <h4>Example headline.</h4>
+                                  </div> -->
+                </div>
+                <div class="col-1"></div>
+                <div class="col-4 card">
+                    <!-- Image 2 -->
+                    <img class="card-img-top" src="assets/images/image4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Example 4</h5>
+                    </div>
+                    <!-- <img src="assets/images/image2.jpg" id="image2" alt="" style="width: 250px"/> -->
+                </div>
+            </div>
+
+  
+        <!-- Gap between rows-->
+        <div class="row"><br /> </br />  </div>
+
+        
+        <div class="row">
+                <div class="col-4 card">
+                    <img class="card-img-top" src="assets/images/image5.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Example 5</h5>
+                    </div>
+                    <!-- Image 1 -->
+                    <!-- <img src="assets/images/image1.jpg" id="image1" alt="" style="width: 250px"/>
+                                <div class="carousel-caption">
+                                    <h4>Example headline.</h4>
+                                  </div> -->
+                </div>
+ 
+
+            </div>
 
 
-    </body>
-    </html>
+
+
+
+        <br />
+        <footer class="fixed-bottom bg-info">
+                <div id="footer" class="container-fluid">
+                    copyright©
+                </div>
+             </footer>
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
